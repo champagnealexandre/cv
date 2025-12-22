@@ -197,10 +197,12 @@ style=phys
       \renewcommand*{\makelabel}[1]{\hss##1}}
   {\endlist}
   {\item}
+\DeclareFieldFormat{cvtitle}{#1}
+
 % Custom Driver for Unpublished (Talks/Posters)
 \DeclareBibliographyDriver{unpublished}{%
   \begin{tabularx}{0.97\textwidth}[t]{>{\raggedright\arraybackslash}X >{\raggedleft\arraybackslash}p{0.25\textwidth}}
-    \textbf{\printfield{title}} & \textbf{\small\color{secondary}\printdate} \\
+    \textbf{\printfield[cvtitle]{title}} & \textbf{\small\color{secondary}\printdate} \\
     \textit{\printfield{eventtitle}} & \textit{\small\color{secondary}\printlist{location}} \\
   \end{tabularx}\vspace{-5pt}
 }
