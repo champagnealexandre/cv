@@ -82,8 +82,8 @@ isbn=false,
 doi=false,
 url=false,
 sorting=ydnt,
-maxbibnames=6,
-minbibnames=6,
+maxbibnames=7,
+minbibnames=7,
 backend=biber,
 style=phys
 ]{biblatex}
