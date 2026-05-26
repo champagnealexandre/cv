@@ -1,2 +1,12 @@
 .DS_Store
 .texpadtmp
+cv.aux
+cv.bbl
+cv.bcf
+cv.blg
+cv.fdb_latexmk
+cv.fls
+cv.log
+cv.out
+cv.run.xml
+cv.synctex.gz
