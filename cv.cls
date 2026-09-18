@@ -124,6 +124,7 @@ style=phys
 
 % Custom Bibliography Checks
 \defbibcheck{inprep}{\ifkeyword{cv_inprep}{}{\skipentry}}
+\defbibcheck{invitedarticle}{\ifkeyword{cv_invitedart}{}{\skipentry}}
 \defbibcheck{preprint}{\ifkeyword{cv_preprint}{}{\skipentry}}
 \defbibcheck{published}{\ifkeyword{cv_journal}{}{\skipentry}}
 \defbibcheck{invitedtalk}{\ifkeyword{cv_invited}{}{\skipentry}} 
@@ -134,6 +135,9 @@ style=phys
 % --- Bibliography Printing Macros ---
 \newcommand{\cvInPrep}{
   \printbibliography[heading=none, check=inprep]
+}
+\newcommand{\cvInvitedArticles}{
+  \printbibliography[heading=none, check=invitedarticle, env=publicationlist]
 }
 \newcommand{\cvPreprints}{
   \printbibliography[heading=none, check=preprint, env=publicationlist]
